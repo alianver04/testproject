@@ -1,16 +1,15 @@
 ## Summary of Changes
 <!-- Summary of changes -->
 
-### do something
+### Database Changes
 <!-- Summary of changes. Delete this section if there are no changes -->
 
 ## Check List
 <!-- please mark the items with [x] -->
-- [ ] I have done first thing
-- [ ] I have done second thing
-- [ ] I have done third thing
-- [ ] I have done fourth thing
-- [ ] I have done fifth thing
+- [ ] I have verified the performance of the API and it is acceptable level.
+- [ ] The code is fully developer tested and covered all various error cases and scenarios
+- [ ] I have logged effort under JIRA against the task
+- [ ] The code doesn't create new warnings
 
 ## Validations
 <!-- List of input validations and error handling -->
