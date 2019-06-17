@@ -35,6 +35,3 @@ jobs:
 
       # run tests!
       # - run: yarn test
-      test:
-        override:
-          - echo 'no tests, just say us Okay!'
