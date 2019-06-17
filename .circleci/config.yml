@@ -9,6 +9,12 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:7.10
 
+    branches: 
+      only:
+        - master
+        - develop
+        - staging
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -35,24 +41,3 @@ jobs:
 
       # run tests!
       # - run: yarn test
-
-      workflows:
-      version: 2
-      dev:
-        jobs:
-          - build_and_deploy_dev:
-              filters:
-                branches:
-                  only: develop
-      staging:
-        jobs:
-          - build_and_deploy_staging:
-              filters:
-                branches:
-                  only: staging
-      prod:
-        jobs:
-          - build_and_deploy_prod:
-              filters:
-                branches:
-                  only: master
