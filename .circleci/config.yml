@@ -35,3 +35,24 @@ jobs:
 
       # run tests!
       # - run: yarn test
+
+      workflows:
+      version: 2
+      dev:
+        jobs:
+          - build_and_deploy_dev:
+              filters:
+                branches:
+                  only: develop
+      staging:
+        jobs:
+          - build_and_deploy_staging:
+              filters:
+                branches:
+                  only: staging
+      prod:
+        jobs:
+          - build_and_deploy_prod:
+              filters:
+                branches:
+                  only: master
