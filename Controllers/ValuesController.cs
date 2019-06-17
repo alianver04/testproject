@@ -21,7 +21,7 @@ namespace testproject.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "Here also working try 1";
+            return "Here also working try 2";
         }
 
         // POST api/values
