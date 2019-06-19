@@ -32,7 +32,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             # - v1-dependencies-
 
-      - run: yarn install
+      # - run: yarn install
 
       # - save_cache:
       #     paths:
@@ -41,3 +41,18 @@ jobs:
 
       # run tests!
       # - run: yarn test
+
+      - setup_remote_docker
+
+      - run:
+          command: |
+            echo 'Building docker images with tag - sometag'
+      - run:
+          command: |
+            docker build -t circleciregistry.azurecr.io/someapi:sometag .
+      - run:
+          command: |
+            docker login --username circleciregistry --password BiM+j6jlBBprE1+nNGZHNWJM5kBtD7Jm circleciregistry.azurecr.io
+      - run:
+          command: |
+            docker push circleciregistry.azurecr.io/someapi:sometag
