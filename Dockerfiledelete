@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y libgdiplus libc6-dev && ln -s /usr/lib/
 
 
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "testproject.dll"]
+ENTRYPOINT ["dotnet", "testproject.dll"]  
