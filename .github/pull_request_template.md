@@ -1,16 +1,18 @@
 ## Summary of Changes
 <!-- Summary of changes -->
 
-### do something
+### do some checks
 <!-- Summary of changes. Delete this section if there are no changes -->
 
 ## Check List
 <!-- please mark the items with [x] -->
-- [ ] I have done first thing
-- [ ] I have done second thing
-- [ ] I have done third thing
-- [ ] I have done fourth thing
-- [ ] I have done fifth thing
+- [ ] I did the first one.
+- [ ] I did the second one.
+- [ ] I did the three one.
+- [ ] I did the four one.
+- [ ] I did the five one.
+- [ ] I did the six one.
+- [ ] I did the seven one.
 
 ## Validations
 <!-- List of input validations and error handling -->
