@@ -14,7 +14,7 @@ namespace testproject.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "successfully - first", "working with docker - try" };
+            return new string[] { "successfully - second", "working with docker - time" };
         }
 
         // GET api/values/5
